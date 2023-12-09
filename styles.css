@@ -1,0 +1,92 @@
+.main-container {
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+    box-sizing: content-box;
+}
+#input1, #input2, #input3 {
+    height: 100px;
+    width: 120px;
+    font-size: 100px;
+}
+.cont {
+    width: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cont p, .cont input {
+    margin-right: 20px;
+}
+body {
+    background-color: pink
+}
+p {
+    font-weight: bold;
+    font-size: 50px;
+}
+#randomImage {
+    width: auto;
+    height: 250px;
+}
+.cont2 {
+    text-align: center;
+}
+.result {
+    text-align: center;
+    margin: 0 5px;
+}
+.result.right {
+    color: blue;
+}
+.result.notRight {
+    color: red;
+}
+.finalResult {
+    position: absolute;
+    bottom: -20px;
+    font-size: 40px;
+}
+#finalResult {
+    position: absolute;
+    bottom: 2px;
+}
+.chooseType {
+    font-size: 16px;
+    margin: 5px;
+}
+#input4 {
+    width: 40px;
+}
+.typeInfo {
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.cont.table {
+    width: auto;
+    max-width: 800px;
+    position: relative;
+}
+#overlay.notActive {
+    background: lightpink;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

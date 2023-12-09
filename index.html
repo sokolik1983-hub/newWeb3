@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица умножения</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class='cont'>
+            <p class="chooseType">Стандартная таблица умножения</p>
+            <button onclick="standart()">Поехали!</button>
+        </div>
+        <div class='cont'>
+            <p class="chooseType">Таблица умножения без 0, 1 и 10</p>
+            <button onclick="shortTable()">Поехали!</button>
+        </div>
+        <div class="cont">
+            <p class="chooseType">Учим таблицу умножения на:
+                <input type="number" min="0" max="10"
+                       oninput="validateInput(event)" id='input4'
+                       style="-moz-appearance: textfield; appearance: none;"/>
+            </p>
+            <button onclick="reload()">Поехали!</button>
+        </div>
+        <div class="typeInfo"></div>
+
+
+        <div class="cont table">
+            <div id="overlay"></div>
+            <input readonly id='input1' type="text">
+            <p>X</p>
+            <input readonly id='input2' type="text">
+            <p>=</p>
+            <input id='input3' type="number" min="0" max="10" oninput="validateInput(event)"
+                   style="-moz-appearance: textfield; appearance: none;"/>
+            <button onclick="checkAnswer()">Проверить ответ</button>
+        </div>
+        <p class='result'></p>
+        <div class='cont2'>
+            <img src="" id='randomImage' alt=""/>
+        </div>
+        <p id='finalResult'></p>
+<script src="scripts.js"></script>
+</body>
+</html>
